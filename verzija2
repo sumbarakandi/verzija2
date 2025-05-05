@@ -1,0 +1,83 @@
+<section class="section">
+  <h2>Naši programi</h2>
+  <div class="program-cards">
+    <div class="program-card">
+      <img src="https://img.icons8.com/ios/452/write.png" alt="Pisanje sastava" />
+      <h3>Pisanje sastava</h3>
+      <p>
+        Radionica za razvoj kreativnog pisanja i kritičkog mišljenja kroz zabavne aktivnosti.
+      </p>
+    </div>
+    <div class="program-card">
+      <img src="https://img.icons8.com/ios/452/speech-bubble.png" alt="Logopedija" />
+      <h3>Logopedske vežbe</h3>
+      <p>
+        Razvijanje govora i jezika kroz igru i vežbe, sa ciljem poboljšanja izgovora i komunikacije.
+      </p>
+    </div>
+    <div class="program-card">
+      <img src="https://img.icons8.com/ios/452/theater-masks.png" alt="Lutkarsko pozorište" />
+      <h3>Lutkarsko pozorište</h3>
+      <p>
+        Kreativno izražavanje i razvoj socijalnih veština kroz igru lutkarskog pozorišta.
+      </p>
+    </div>
+    <div class="program-card">
+      <img src="https://img.icons8.com/ios/452/relax.png" alt="Relax Kids" />
+      <h3>Relax Kids</h3>
+      <p>
+        Program opuštanja i samopomoći za decu, zasnovan na meditaciji, disanju i igri.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .program-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .program-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+
+  .program-card img {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .program-card h3 {
+    font-size: 1.4rem;
+    color: #f26522;
+    margin-bottom: 1rem;
+  }
+
+  .program-card p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .program-card img {
+    animation: bounce 1s infinite alternate;
+  }
+
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+</style>
